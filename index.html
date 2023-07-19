@@ -1,58 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>C-bolla</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="estilos.css">
+       
+        <title>C-bolla</title>
 </head>
 <body>
-    <div class="wrapper">
-       <aside>
-            <header>
-                <h1 class="logo">C-bolla</h1>
-            </header>
-            <nav>
-                <ul class="menu">
-                    <li>
-                        <button id="todos los productos" class="boton-menu boton-categoria active" >Todos los productos</button>
-                    </li>
-                    <li>
-                        <button id="deportes" class="boton-menu boton-categoria">Deportes</button>
-                    </li>
-                    <li>
-                        <button id="anime" class="boton-menu boton-categoria">Anime</button>
-                    </li>
-                    <li>
-                        <button id="mascotas" class="boton-menu boton-categoria">Mascotas</button>
-                    </li>
-                    <li>
-                        <button id="geek" class="boton-menu boton-categoria">Geek</button>
-                    </li>
-                    <li>
-                        <button id="otros" class="boton-menu boton-categoria">Otros</button>
-                    </li>
-                    <li>
-                        <button id="lo mas top" class="boton-menu boton-categoria">Lo Nuevo/TOP</button>
-                    </li>
-                    <li>
-                        <a class="botton-carrito" href="carrito.html">Carrito<span id="numerito" class="numerito">0</span></a>
-                    </li>
-                </ul>
-            </nav>
-        </aside>
-        <main>
-            <h2 id="titulo-principal" class="titulo-principal">Todos los productos</h2>
-            <div id="contenedor-productos" class="contenedor-productos">
-               <!--Los productos de JS se depositan en este DIV-->
+    <header>
+        <input type="checkbox" id="check">
+                <label for="check" class="mostrar-menu">&#8801</label>
+        <nav class="menu">
+           
+            <a href="pagina anime.html" target="deportes" >Menu</a>
+            
+            <a href="nosotros.html" >Nosotros</a>
+            <a href="contacto.html" >Contacto</a>
+           <!-- comando de boton para cambiar de pagina con js <button onclick="checkbutton()" >abrir</button> -->
+         
+            
+            <label for="check" class="esconder-menu">&#215</label>
+        </nav>
+    </header>
+        <h1 class="encabezado">C-bolla</h1>
+            <br>
+        <h2>Lo más Top</h2>
+        <br>
+        <div id="slider" class="slider">
+            <ul>
+                <li>
+                   <a href="imagenes/Cats/playeras/wepik-export-20230607032627gdGw.png"> <img src="imagenes/Cats/playeras/sin fondo/wepik-export-20230607032627gdGw-removebg-preview.png" alt=""></a>
+                    
+                </li>
+                <li>
+                    <a href="imagenes/Cats/playeras/wepik-export-202306070327409oSW.png"> <img src="imagenes/Cats/playeras/sin fondo/wepik-export-202306070327409oSW-removebg-preview.png" alt="">  </a>        
+                </li>
+                <li>
+                    <a href="imagenes/Cats/playeras/wepik-export-202306070336463wHM.png"> <img src="imagenes/Cats/playeras/sin fondo/wepik-export-202306070336463wHM-removebg-preview.png" alt="">  </a>        
+                </li>
+                <li>
+                    <a href="imagenes/Cats/playeras/wepik-export-20230607033737SdQd.png"> <img src="imagenes/Cats/playeras/sin fondo/wepik-export-20230607033737SdQd-removebg-preview.png" alt="">  </a>        
+                </li>
+                <li>
+                    <a href="imagenes/Cats/playeras/wepik-export-20230607032627gdGw.png"> <img src="imagenes/Cats/playeras/sin fondo/wepik-export-20230607032627gdGw-removebg-preview.png" alt="">  </a>
+                     
+                 </li>
+                 <li>
+                     <a href="imagenes/Cats/playeras/wepik-export-202306070327409oSW.png"> <img src="imagenes/Cats/playeras/sin fondo/wepik-export-202306070327409oSW-removebg-preview.png" alt=""></a>        
+                 </li> 
+            </ul>
+        </div>
+        <br>
+        <br>
+        <h2>Lo Nuevo</h2>
+        <br>
+        <div class="slider">
+            <ul>
+                <li>
+                   <a href="imagenes/Cats/playeras/wepik-export-20230607032627gdGw.png"> <img src="imagenes/Cats/playeras/sin fondo/wepik-export-20230607032627gdGw-removebg-preview.png" alt="">  </a>
+                    
+                </li>
+                <li>
+                    <a href="imagenes/Cats/playeras/wepik-export-202306070327409oSW.png"> <img src="imagenes/Cats/playeras/sin fondo/wepik-export-202306070327409oSW-removebg-preview.png" alt="">  </a>        
+                </li>
+                <li>
+                    <a href="imagenes/Cats/playeras/wepik-export-202306070336463wHM.png"> <img src="imagenes/Cats/playeras/sin fondo/wepik-export-202306070336463wHM-removebg-preview.png" alt="">  </a>        
+                </li>
+                <li>
+                    <a href="imagenes/Cats/playeras/wepik-export-20230607033737SdQd.png"> <img src="imagenes/Cats/playeras/sin fondo/wepik-export-20230607033737SdQd-removebg-preview.png" alt="">  </a>        
+                </li>
+                <li>
+                    <a href="imagenes/Cats/playeras/wepik-export-20230607032627gdGw.png"> <img src="imagenes/Cats/playeras/sin fondo/wepik-export-20230607032627gdGw-removebg-preview.png" alt="">  </a>
+                     
+                 </li>
+                 <li>
+                     <a href="imagenes/Cats/playeras/wepik-export-202306070327409oSW.png"> <img src="imagenes/Cats/playeras/sin fondo/wepik-export-202306070327409oSW-removebg-preview.png" alt="">  </a>        
+                 </li> 
+            </ul>
+        </div>
+        <br>
+        <br>
+        <h2 class="encabezado2">y tú... que capa eres?</h2>
+        <br>
+        <br>
+        <div >
+           <table class="pasarela">
+            
+            <tr>
+                <td class="deportes">
+                    <p class="txtpasarela">Sports</p>
+                    <a href="pagina anime.html" ><img src="pasarela/deportes/Cafr2394_max_verstapen_and_formula_one_car_39382347-b58b-451a-a5e0-762389c0e187.png" alt=""></a>
+                 </td>
+                
+                 <td class="gym">
+                    <p class="txtpasarela">Gym</p>
+                    <a href="pagina anime.html" ><img src="pasarela/Gym/Cafr2394_wonderwoman_exercising_with_dumbell_5852b4a6-7912-4730-8970-9e6ba6f04f84.png" alt=""></a>
+                 </td>
+                 <td class="anime">
+                    <p class="txtpasarela">Amine</p>
+                    <img src="pasarela/anime/C-bolla_a_flat_dualtone_son_goku_black_and_yellow_e0640326-a744-4f4a-95b5-8ee3ccaba28f.png" alt="">
+                </td>
+                 <td class="mascotas">
+                    <p class="txtpasarela">Mascotas</p>
+                    <img src="pasarela/mascotas/Cafr2394_a_flat_dualtone_futuristic_cat_with_glasses_and_suit_y_8fd03852-acce-4385-8787-9133a5766225.png" alt="">
+                </td>
+               
+                <td class="Geek">
+                    <p class="txtpasarela">Geek</p>
+                    <img src="pasarela/Geek/Cafr2394_geek_grapping_glasses_and_ipad_68bd2dde-fdcd-405f-ae0a-77aee596e6fe.png">
+                </td>
+                <td class="Otros">
+                    <p class="txtpasarela">Otros</p>
+                    <img src="pasarela/otros/Cafr2394_a_flat_dualtone_oni_girl_wearing_Menpo_silhouette_blac_bac9a375-c93b-4805-a55b-ec0790a24016.png" alt="">
+                </td>
+            </tr>
+           </table>
+        </div>
+
+        <div class="pasarela-mobile">
+            <div class="fila">
+               <Table class="table-mobile">
+                <tr>
+                    <td class="anime">
+                        <p class="txtpasarela">Amine</p>
+                        <img src="pasarela/anime/C-bolla_a_flat_dualtone_son_goku_black_and_yellow_e0640326-a744-4f4a-95b5-8ee3ccaba28f.png" alt="">
+                    </td>
+                     <td class="gym">
+                        <p class="txtpasarela">Gym</p>
+                        <img src="pasarela/Gym/Cafr2394_wonderwoman_exercising_with_dumbell_5852b4a6-7912-4730-8970-9e6ba6f04f84.png" alt="">
+                     </td>
+                     <td class="mascotas">
+                        <p class="txtpasarela">Mascotas</p>
+                        <img src="pasarela/mascotas/Cafr2394_a_flat_dualtone_futuristic_cat_with_glasses_and_suit_y_8fd03852-acce-4385-8787-9133a5766225.png" alt="">
+                    </td>
+                </tr>
+               </Table>
             </div>
 
+            <div class="fila">
+                <Table class="table-mobile">
+                 <tr>
+                    <td class="deportes">
+                        <p class="txtpasarela">Sports</p>
+                        <img src="pasarela/deportes/Cafr2394_messi_with_inter_miami_tshirt_0d55f9ad-feaf-425c-945c-d4bab39db720.png" alt="">
+                     </td>
+                    <td class="Geek">
+                        <p class="txtpasarela">Geek</p>
+                        <img src="pasarela/Geek/Cafr2394_geek_grapping_glasses_and_ipad_68bd2dde-fdcd-405f-ae0a-77aee596e6fe.png">
+                    </td>
+                    <td class="Otros">
+                        <p class="txtpasarela">Otros</p>
+                        <img src="pasarela/otros/Cafr2394_a_flat_dualtone_oni_girl_wearing_Menpo_silhouette_blac_bac9a375-c93b-4805-a55b-ec0790a24016.png" alt="">
+                    </td>
+                     
+                 </tr>
+                </Table>
+             </div>
 
-        </main>
+                    
+        </div>
 
-    </div>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        
 
-    <script src="main.js"></script>
-</body>
+        <br>
+        <br>
+        <script src="menuprincipal.js"></script>
+    </body>
 </html>

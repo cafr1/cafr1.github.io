@@ -6,55 +6,64 @@
     font-family: sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, p, a, input, textarea, ul{
+h2, h3, h4, h5, h6, p, a, input, textarea, ul{
     margin:0;
     padding: 0;
 }
 
 ul{
     list-style-type: none;
+    font-family: 'Times New Roman', Times, serif;
+    gap: 1.1rem;
 }
 
 a{
     text-decoration: none;
+    color: black;
+    font-weight: lighter;
 }
 
 .wrapper{
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    background-color: gray;
+    width: 100%;
+    background-color:black;
 }
 
-aside{
-    padding: 2rem;
-    color: white;
-    position: sticky;
-    top: 0;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+ 
+    
 
-}
+
 
 .logo{
-    font-weight: 400;
-    font-size: 1.4rem;
+    color: white;
+    margin: -1,2rem;
+    display: flex;
+  
+    justify-content: center;
+  
+    font-weight: lighter;
+    font-size: 150px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .menu{
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
-
+    align-items: baseline;
+    justify-content:center;
+    background-color:white;
+  width: 100%;
+ margin: 0;
 }
 
 .boton-menu.active{
-background-color: white;
-color: blue;
-border-radius: 1.2rem;
-
+background-color: black;
+color: white;
+border-radius: 0rem;
+padding: 0.5rem;
+scale: 1.1;
+padding: 1rem;
+margin: 0;
 }
+
 
 .botton-carrito {
     margin-top: 10rem;
@@ -72,20 +81,30 @@ border-radius: 1.2rem;
 
 .boton-menu:hover{
     transform: scale(1.1);
-    color: aqua;
+    color:blue;
+    
 }
 
+
+/*div de playeras*/
 main{
-    background-color: white;
-    margin: 1rem;
-    border-radius: 2rem;
-    padding: 2rem;
+    background-color: black;
+    margin: 0;
+    border-radius: 0;
+    padding: 0.8rem;
     margin-left: 0;
+    margin-top: -1rem;
 }
 
 .titulo-principal{
-    color: blue;
-    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: lighter;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+
 }
 
 .contenedor-productos{
@@ -126,7 +145,7 @@ main{
 
 .producto-agregar:hover{
 transform: scale(1.05);
-background-color: blueviolet;
+background-color: green;
 }
 
 

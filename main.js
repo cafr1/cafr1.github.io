@@ -3,11 +3,14 @@ const productos = [
     id: "playera deportes",
     titulo:"playera deportes",
     imagen: "imagenes/deporte (2).png",
+    talla: "grande",
+    genero: "hotmbre",
     categoria: {
-        nombre: "deportes",
-        id: "deportes"
+        nombre: "Deportes",
+        id: "Deportes"
     },
-    precio: 1000
+    precio: 1000,
+   
 },
 
 {
@@ -15,8 +18,8 @@ const productos = [
     titulo:"playera gym",
     imagen: "imagenes/gym.png",
     categoria: {
-        nombre: "gym",
-        id: "gym"
+        nombre: "Gym",
+        id: "Gym"
     },
     precio: 1001
 },
@@ -26,8 +29,8 @@ const productos = [
     titulo:"playera anime",
     imagen: "imagenes/anime.jpg",
     categoria: {
-        nombre: "anime",
-        id: "anime"
+        nombre: "Anime",
+        id: "Anime"
     },
     precio: 1002
 },
@@ -37,8 +40,8 @@ const productos = [
     titulo:"playera mascotas",
     imagen: "imagenes/mascotas.png",
     categoria: {
-        nombre: "mascotas",
-        id: "mascotas"
+        nombre: "Mascotas",
+        id: "Mascotas"
     },
     precio: 1004
 },
@@ -49,8 +52,8 @@ const productos = [
     titulo:"playera geek",
     imagen: "imagenes/geek.JPG",
     categoria: {
-        nombre: "geek",
-        id: "geek"
+        nombre: "Geek",
+        id: "Geek"
     },
     precio: 1005
 },
@@ -60,8 +63,8 @@ const productos = [
     titulo:"playera otros",
     imagen: "imagenes/otros.png",
     categoria: {
-        nombre: "otros",
-        id: "otros"
+        nombre: "Otros",
+        id: "Otros"
     },
     precio: 1006
 },
@@ -71,8 +74,8 @@ const productos = [
     titulo:"playera top",
     imagen: "imagenes/lo mas top.jpg",
     categoria: {
-        nombre: "lo mas top",
-        id: "lo mas top"
+        nombre: "Lo mas top",
+        id: "Lo mas top"
     },
     precio: 1007
 },
@@ -82,8 +85,8 @@ const productos = [
     titulo:"todos los productos",
     imagen: "imagenes/lo mas top.jpg",
     categoria: {
-        nombre: "todos los productos",
-        id: "todos los productos"
+        nombre: "Todos los productos",
+        id: "Todos los productos"
     },
     precio: 1000
 }
@@ -107,7 +110,11 @@ function cargarProductos(productosElegidos){
         <img class="producto-imagen" src="${producto.imagen}" alt="${producto.titulo}">
                     <div class="producto-detalles">
                         <h3 class="producto-titulo">${producto.titulo}</h3>
-                        <p class="producto-precio">${producto.precio}</p>
+                        <p class="producto-titulo">talla:${producto.talla}</p>
+                        <p class="producto-titulo">${producto.genero}
+                        </p>
+                        <h3 class="producto-titulo"> ${producto.precio}</h3>
+                       
                         <button class="producto-agregar" id= "${producto.id}">Agregar</button>
                     </div>    
                     `;        

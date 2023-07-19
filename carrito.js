@@ -43,11 +43,14 @@ if(productosEnCarrito && productosEnCarrito.length > 0){
         <div class="carrito-producto-titulo">
             <small>Titulo</small>
             <h3>${producto.titulo}</h3>
+            <p>${producto.genero}</p>
+            <p>${producto.talla}</p>
         </div>
         <div class="carrito-producto-cantidad">
             <small>Cantidad</small>
             <p>${producto.cantidad}</p>
         </div>
+        
         <div class="carrito-producto-precio">
             <small>Precio</small>
             <p>${producto.precio}</p>
